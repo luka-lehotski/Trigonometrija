@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            text-align:left;
+        }
+        .Naslov{
+            height:100px;
+            width:92%;
+            position: absolute;
+            left:1cm;
+            right:1cm;
+            margin: 10px auto;
+            padding-top: 5px;
+            padding-left: 30px;
+            border-radius:5px;
+            background-color: rgb(0, 119, 255);
+        }
+        body{
+            background: fixed;
+            background-color:rgb(236, 235, 235);
+        }
+        a{
+            font-size: large;
+        }
+        .a1{
+            width:600px;
+			height:300px;
+			position: absolute;
+            top:170px;
+			left:350px;
+        }
+        .a2{
+            width:600px;
+			height:300px;
+			position: absolute;
+            top:520px;
+            left:350px;
+        }
+        .rez{
+            background:linear-gradient(90deg,black,rgb(151, 151, 151));
+            width:100%;
+            height:0.5cm;
+            top:4cm;
+            position:absolute;
+        }
+        .Meni{
+            width: 6cm;
+            position:absolute;
+            top:6cm;
+            left:1cm;
+            border: 5px;
+            border-style:ridge;         
+            border-color:black;   
+        }
+        .Meni a{
+            text-align: left;
+            background-color: rgb(63, 61, 61);
+            color: black;
+            display: block;
+            padding:10px;
+            padding-left: 30px;
+            border:rgb(0, 0, 0);
+        }
+        .Meni a:hover{
+            background-color: rgb(134, 134, 134);
+        }
+        .Meni a.active {
+            background-color: rgb(0, 81, 255);
+            color: black;
+        }
+        .sadrzaj{
+            width: 900px;
+            height: 1950px;
+            position:absolute;
+            top:6cm;
+            left:8cm;
+            background:linear-gradient(45deg,white,rgb(240, 239, 239));
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            font-family: Arial;
+            font-size: medium;
+            padding:1cm;
+        }
+        .anm1{
+            height:500px;
+            width:900px;
+        }
+        .slk1{
+            width: 900px;
+            height:auto;
+        }
+        .sledeca{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            right:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .prethodna{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            left:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .str{
+            color:rgb(148, 148, 148);
+        }
+    </style>
+    <header>
+        <meta charset="UTF-8">
+		<meta name="description">
+        <title>Trigonometrija</title>
+        <div class="Naslov">
+            <h1>Trigonometrija</h1>
+        </div>
+    </header>
+    <body>
+        <div class="Meni">
+            <a href = "index.html">Strana 1</a>
+            <a href = "#" class = "active">Strana 2</a>
+            <a href = "Slajd-3.html">Strana 3</a>
+            <a href = "Slajd-4.html">Strana 4</a>
+            <a href = "Slajd-5.html">Strana 5</a>
+        </div>
+        <div class="rez"></div>
+        <div class="sadrzaj">
+            <p>Sada cemo definisati sta su to sinus i kosinus ugla.</p>
+            <p>Pogledajmo sliku ispod:</p>
+            <img class ="slk1" src="slika.png">
+            <p>Krug ima stranicu duzine 1.</p>
+            <p>Tacka A je centar kruga, a tacka B se nalazi na njemu.</p>
+            <p>Tacka X je projekcija iz B na x osu, a tacka Y projekcija na y osu.</p>
+            <p>Duz AX predstavlja <b>kosinus</b> ugla &alpha;, a duz AY predstavlja <b>sinus</b> ugla &alpha;.</p>
+            <p>Na animaciji ispod mozete pomerati tacku B po kruznici i prikazace vam se sinus i kosinus za ugao &alpha;.</p>
+            <iframe class = "anm1" scrolling="no" title="Nadji-sin-cos" src="https://www.geogebra.org/material/iframe/id/vff8v56u/width/1366/height/663/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="663px" style="border:0px;"> </iframe>
+            <p>Sada ovo mozemo da primenimo na problem sa tetivom, ali da ga ovog puta resimo pomocu trigonometrije:</p>
+            <p>Trazimo duzinu tetive BC:</p>
+            <img class="slk1" src="formula2.png">
+            <p>Ovde je iskoriscen identitet za polovinu ugla, ali se moze izracunati i bez njega.</p>
+            <p>Preko ovog primera, Grci su resili ovaj problem, a ujedno i prvi put upotrebili izraze sinus i kosinus</p>
+            <p>Na sledecoj strani videcemo jos neke prikaze trigonometrijskih funkcija.</p>    
+            <div class = "sledeca">
+                <a class="str" href = "Slajd-3.html">Sledeca strana</a>
+            </div>
+            <div class = "prethodna">
+                <a class="str" href = "index.html">Prethodna strana</a>
+            </div>
+        </div>
+    </body>
+</html>

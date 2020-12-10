@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            text-align:left;
+        }
+        .Naslov{
+            height:100px;
+            width:92%;
+            position: absolute;
+            left:1cm;
+            right:1cm;
+            margin: 10px auto;
+            padding-top: 5px;
+            padding-left: 30px;
+            border-radius:5px;
+            background-color: rgb(0, 119, 255);
+        }
+        body{
+            background: fixed;
+            background-color:rgb(236, 235, 235);
+        }
+        a{
+            font-size: large;
+        }
+        .rez{
+            background:linear-gradient(90deg,black,rgb(151, 151, 151));
+            width:100%;
+            height:0.5cm;
+            top:4cm;
+            position:absolute;
+        }
+        .Meni{
+            width: 6cm;
+            position:absolute;
+            top:6cm;
+            left:1cm;
+            border: 5px;
+            border-style:ridge;         
+            border-color:black;   
+        }
+        .Meni a{
+            text-align: left;
+            background-color: rgb(63, 61, 61);
+            color: black;
+            display: block;
+            padding:10px;
+            padding-left: 30px;
+            border:rgb(0, 0, 0);
+        }
+        .Meni a:hover{
+            background-color: rgb(134, 134, 134);
+        }
+        .Meni a.active {
+            background-color: rgb(0, 81, 255);
+            color: black;
+        }
+        .sadrzaj{
+            width: 900px;
+            height: 2150px;
+            position:absolute;
+            top:6cm;
+            left:8cm;
+            background:linear-gradient(45deg,white,rgb(240, 239, 239));
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            font-family: Arial;
+            font-size: medium;
+            padding:1cm;
+        }
+        .sledeca{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            right:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .prethodna{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            left:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .anm1{
+            height:500px;
+            width:900px;
+        }
+        .str{
+            color:rgb(148, 148, 148);
+        }
+    </style>
+    <header>
+        <meta charset="UTF-8">
+		<meta name="description">
+        <title>Trigonometrija</title>
+        <div class="Naslov">
+            <h1>Trigonometrija</h1>
+        </div>
+    </header>
+    <body>
+        <div class="rez"></div>
+        <div class="Meni">
+            <a href = "index.html">Strana 1</a>
+            <a href = "Slajd-2.html">Strana 2</a>
+            <a href = "Slajd-3.html">Strana 3</a>
+            <a href = "#" class = "active">Strana 4</a>
+            <a href = "Slajd-5.html">Strana 5</a>
+
+        </div>
+        <div class="sadrzaj">
+            <p>Sta ce se desiti ako trenutnu poziciju tacke koja kruzi na x osi prestavimo u funkciji vremena (y osa), ili obrnuto, poziciju na y osi u odnosu na vreme (x osa)? Pogledajmo na animaciji:</p>
+            <iframe class="anm1" scrolling="no" title="grafici-1" src="https://www.geogebra.org/material/iframe/id/qcucfynv/width/1366/height/716/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="716px" style="border:0px;"> </iframe>
+            <p>Plavi grafik predstavlja grafik sinusne funkcije. Jednacina ove funkcije je y = sinx.</p>
+            <p>Osnovni period ove funkcije je 2&pi;, a nule su joj za x=k&pi;, k je ceo broj.</p>
+            <p>To znaci da je sinus nekog ugla jednak nuli ako je taj ugao jednak k&pi;,znaci to je na nasem grafiku za x=0,x=&pi; i x=2&pi;, posto je nas grafik samo na intervalu [0,2&pi;]. </p>
+            <p>Crveni grafik predstavlja grafik kosinusne funkcije. Mozemo primetiti da on ima identican oblik, samo preslikan na y osu.</p>
+            <p>Sada cemo prosiriti grafik sinusne funkcije. Za sada smo je videli samo u osnovnom obliku y = sin x.</p>
+            <p>Predstavicemo je u obliku <b>y = asin(bx+c)</b></p>
+            <p>U osnovnom obliku imamo da je a=1, b=1 i c=0.</p>
+            <p>Pocetni polozaj u animaciji ispod podesen kao u osnovnom obliku.</p>
+            <p>Pogledajte sta ce se desiti ako pustite promenljive a, b ili c, pojedinacno, ili sve zajedno. Na animaciji mozete podesiti da se same pokrecu ili da ih podesite na slajderu: </p>
+            <iframe class = "anm1" scrolling="no" title="Prosiren grafik" src="https://www.geogebra.org/material/iframe/id/ef52yzca/width/1080/height/678/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1080px" height="678px" style="border:0px;"> </iframe>
+            <p>Sada cemo analizirati sta se desava menjanjem svakog od parametara a, b i c posebno.</p>
+            <p>Parametar <b>a</b> naziva se <b>amplituda</b>.</p>
+            <p>Kako se a menja, nas "talas" raste, postaje izduzeniji kako je |a| vece.</p>
+            <p>Najveca i najmanja vrednost funkcije nazivaju se <b>ekstremne vrednosti</b> i one iznose <b>+/-a</b></p>
+            <p>Parametar <b>b</b> naziva se frekvencija "talasa".</p>
+            <p>Primetimo da kako se b povecava, talas postaje <b>ucestaliji</b>, to jest uzi. Frekvencija dakle znaci ucestalost.</p>
+            <p>Definisacemo i <b>osnovni period</b> T. On oznacava duzinu jednog "talasa" i iznosi 2&pi;/b. </p>
+            <p>I na kraju, parametar c predstavlja <b>pocetnu fazu</b>.</p>
+            <p>Pocetna faza oznacava pomeraj talasa u odnosu na poziciju x=0, i to pomeraj ulevo za vrednost c.</p>
+            <p>Pitanje je zasto crtamo sve ove grafike, da li oni imaju neku primenu?</p>
+            <p>Primena bas ovih talasa veoma je siroka.</p>
+            <p>Koristi se za opis mehanickih, zvucnih i radio talasa. Preko njih mozemo opisati tonove koje cujemo, radio signale, i oni su osnova funkcionisanja telekomukacionih sistema i mnogih drugih.</p>
+            <p>Ovako se skoro sve vrste signala mogu opisati, opisuju i Doplerov efekat koji opisuje odnos zvucnih talasa i pokretnog izvora zvuka i slusaoca. Tako je upotrebljen i za mnoga svemirska istrazivanja.</p>
+            <p>Zbog svega toga, mozemo zakljuciti da je trigonometrija izuzetno vazna i veoma siroko upotrebljena.</p>
+            <p>Na poslednjoj strani videcemo jos nekoliko zanimljivih osobina trigonometrijskih funkcija.</p>
+            <div class = "sledeca">
+                <a class="str" href = "Slajd-5.html">Sledeca strana</a>
+            </div>
+            <div class = "prethodna">
+                <a class="str" href = "Slajd-3.html">Prethodna strana</a>
+            </div>
+        </div>
+    </body>    
+</html>    

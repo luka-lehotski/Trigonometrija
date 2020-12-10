@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            text-align:left;
+        }
+        .Naslov{
+            height:100px;
+            width:92%;
+            position: absolute;
+            left:1cm;
+            right:1cm;
+            margin: 10px auto;
+            padding-top: 5px;
+            padding-left: 30px;
+            border-radius:5px;
+            background-color: rgb(0, 119, 255);
+        }
+        body{
+            background: fixed;
+            background-color:rgb(236, 235, 235);
+        }
+        a{
+            font-size: large;
+        }
+        .a1{
+            width:600px;
+			height:300px;
+			position: absolute;
+            top:170px;
+			left:350px;
+        }
+        .a2{
+            width:600px;
+			height:300px;
+			position: absolute;
+            top:520px;
+            left:350px;
+        }
+        .rez{
+            background:linear-gradient(90deg,black,rgb(151, 151, 151));
+            width:100%;
+            height:0.5cm;
+            top:4cm;
+            position:absolute;
+        }
+        .Meni{
+            width: 6cm;
+            position:absolute;
+            top:6cm;
+            left:1cm;
+            border: 5px;
+            border-style:ridge;         
+            border-color:black;   
+        }
+        .Meni a{
+            text-align: left;
+            background-color: rgb(63, 61, 61);
+            color: black;
+            display: block;
+            padding:10px;
+            padding-left: 30px;
+            border:rgb(0, 0, 0);
+        }
+        .Meni a:hover{
+            background-color: rgb(134, 134, 134);
+        }
+        .Meni a.active {
+            background-color: rgb(0, 81, 255);
+            color: black;
+        }
+        .sadrzaj{
+            width: 900px;
+            height: 1600px;
+            position:absolute;
+            top:6cm;
+            left:8cm;
+            background:linear-gradient(45deg,white,rgb(240, 239, 239));
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            font-family: Arial;
+            font-size: medium;
+            padding:1cm;
+        }
+        .slika1{
+            width: 500px;
+            height: 380px;
+        }
+        .slika2{
+            width:800px;
+            height:initial;
+        }
+        .sledeca{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            right:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .str{
+            color:rgb(148, 148, 148);
+        }
+    </style>
+    <header>
+        <meta charset="UTF-8">
+		<meta name="description">
+        <title>Trigonometrija</title>
+        <div class="Naslov">
+            <h1>Trigonometrija</h1>
+        </div>
+    </header>
+    <body>
+        <div class="rez"></div>
+        <div class="Meni">
+            <a href = "#" class = "active">Strana 1</a>
+            <a href = "Slajd-2.html">Strana 2</a>
+            <a href = "Slajd-3.html">Strana 3</a>
+            <a href = "Slajd-4.html">Strana 4</a>
+            <a href = "Slajd-5.html">Strana 5</a>
+
+        </div>
+        <div class = "sadrzaj">
+            <p>Kad cujemo rec trigonometrija, verovatno pomislimo na trouglove, dugacke izraze i nesto komplikovano i neupotrebljivo.</p>
+            <p>A da li je to zaista tako, ili se trigonometrija mozda moze posmatrati i na drugaciji nacin?</p>
+            <p>Naravno da moze! To cemo videti na ovoj prezentaciji.</p>
+            <p>Trigonometrija je jedna od najprimenjenijih grana matematike, a koristi se u arhitekturi, fizici, inzenjerstvu, tehnici i svim granama nauke koje koriste geometrijska izracunavanja.</p>
+            <p>Rec trigonometrija potice od grckih reci <b>τριγονο</b>, sto znaci trougao, i <b>μετρειν</b>, sto znaci merenje.</p>
+            <p>Kao sto samo ime kaze ona se bavi <b>merenjem trouglova</b>, ali ona moze da se posmatra i na krugove i uglove.</p>
+            <p>Prvi put u istoriji je zabelezena izmedju 1900. i 1600. godine, kada su njenu "proto" verziju koristili stari Egipcani da bi gradili piramide.</p>
+            <p>Da, trigonometrija je upotrebljivana cak tada, i pomocu nje sagradjene su poznate piramide koje pridadaju najvecim gradjevinama svih vremena.</p>
+            <p>Egipcani nisu imali sastavljenu celu trigonometriju kakvu danas poznajemo, ali koristili su njene delove kako bi opisali odnose u trouglovima kako bi gradili piramide.</p>
+            <img src="http://www.mathematicsmagazine.com/Articles/rhind12121.png" class = "slika1">
+            <p>Dakle, vec u tom periodu istorije, trigonometrija se koristila, mada Egipcani nisu racunali vrednosti funkcija uglova.Oni su je koristili da bi opisali odnose u trouglu.</p>
+            <p>Prvi koji su upotrebili trigonometriju za izracunavanje bili su Grci. Oni su prvi upotrebili funkcije za koje danas znamo.</p>
+            <p>Grcki matematicar <b>Hipokrit</b> posmatrao je tetive kruga i centalne uglove.</p>
+            <p>Hteo je da nadje duzinu tetive, ili osnovicu jednakokrakog trougla ako mu je poznat krak i ugao pri vrhu.</p>
+            <p>Pogledajmo sliku:</p>
+            <img src = "tetiva1_v1.png" class = "slika2">
+            <p>Pomocu Pitagorine teoreme, moze se naci tetiva BC kruga sa centrom u A poluprecnika AB.</p>
+            <p>To se moze uraditi samo sa poznatim poluprecnikom AB i duzi AD - normala iz C na AB.</p>
+            <p>Kako bismo nasli ovu duzinu ne moramo koristiti trigonometriju, ovde je upoptrebljena samo Pitagorina teorema.</p>
+            <p>Ali, na ovom primeru Grci su prvi put upotrebili oznake <b>kosinus</b> i <b>sinus</b>.</p>
+            <p>Pogledajmo kako su to uradili na sledecoj stranici.</p>
+            <div class = "sledeca">
+                <a class="str" href = "Slajd-2.html">Sledeca strana</a>
+            </div>
+        </div>
+    </body>
+</html>

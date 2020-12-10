@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            text-align:left;
+        }
+        .Naslov{
+            height:100px;
+            width:92%;
+            position: absolute;
+            left:1cm;
+            right:1cm;
+            margin: 10px auto;
+            padding-top: 5px;
+            padding-left: 30px;
+            border-radius:5px;
+            background-color: rgb(0, 119, 255);
+        }
+        body{
+            background: fixed;
+            background-color:rgb(236, 235, 235);
+        }
+        a{
+            font-size: large;
+        }
+        .rez{
+            background:linear-gradient(90deg,black,rgb(151, 151, 151));
+            width:100%;
+            height:0.5cm;
+            top:4cm;
+            position:absolute;
+        }
+        .rez{
+            background:linear-gradient(90deg,black,rgb(151, 151, 151));
+            width:100%;
+            height:0.5cm;
+            top:4cm;
+            position:absolute;
+        }
+        .Meni{
+            width: 6cm;
+            position:absolute;
+            top:6cm;
+            left:1cm;
+            border: 5px;
+            border-style:ridge;         
+            border-color:black;   
+        }
+        .Meni a{
+            text-align: left;
+            background-color: rgb(63, 61, 61);
+            color: black;
+            display: block;
+            padding:10px;
+            padding-left: 30px;
+            border:rgb(0, 0, 0);
+        }
+        .Meni a:hover{
+            background-color: rgb(134, 134, 134);
+        }
+        .Meni a.active {
+            background-color: rgb(0, 81, 255);
+            color: black;
+        }
+        .sadrzaj{
+            width: 900px;
+            height: 2650px;
+            position:absolute;
+            top:6cm;
+            left:8cm;
+            background:linear-gradient(45deg,white,rgb(240, 239, 239));
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            font-family: Arial;
+            font-size: medium;
+            padding:1cm;
+        }
+        .prethodna{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            left:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .anm1{
+            height:500px;
+            width:900px;
+        }
+        .str{
+            color:rgb(148, 148, 148);
+        }
+    </style>
+    <header>
+        <meta charset="UTF-8">
+		<meta name="description">
+        <title>Trigonometrija</title>
+        <div class="Naslov">
+            <h1>Trigonometrija</h1>
+        </div>
+    </header>
+    <body>
+        <div class = "rez"></div>
+        <div class = "Meni">
+            <a href = "index.html">Strana 1</a>
+            <a href = "Slajd-2.html">Strana 2</a>
+            <a href = "Slajd-3.html">Strana 3</a>
+            <a href = "Slajd-4.html">Strana 4</a>
+            <a href = "#" class = "active">Strana 5</a>
+        </div>
+        <div class="sadrzaj">
+            <p>Pogledajmo animaciju ispod. Da li crvena i plava tacka deluju kao da kruze jedna oko druge?</p>
+            <iframe class="anm1" scrolling="no" title="Tacke-samo tacke" src="https://www.geogebra.org/material/iframe/id/yzdpeamu/width/1334/height/609/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1334px" height="609px" style="border:0px;"> </iframe>
+            <p>Sta ove tacke zapravo predstavljaju? Da li nas mozda podsecaju na nesto sto smo videli ranije?</p>
+            <p>Crvena i plava tacka predstavljaju sinus odnosno kosinus tacke koja kruzi po kruznici, samo se ta tacka ne vidi, pogledajmo:</p>
+            <iframe class="anm1" scrolling="no" title="tacke-u-bojama" src="https://www.geogebra.org/material/iframe/id/hcqqzwhd/width/1366/height/663/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="663px" style="border:0px;"> </iframe>
+            <p>Ove dve tacke se krecu po samo jednoj liniji. Uopste ne prave kruznu putanju!</p>
+            <p>A zasto nam se cini da stvarno kruze? Pogledajmo putanju sredista duzi koja ih spaja:</p>
+            <iframe class="anm1" scrolling="no" title="Tacke i krug" src="https://www.geogebra.org/material/iframe/id/ewanjdgx/width/1096/height/716/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1096px" height="716px" style="border:0px;"> </iframe>
+            <p>Ove funkcije, kako smo videli imaju veoma zanimljiva svojstva.</p>
+            <p>Projekcije tacke na krugu na x i y osu pokazale su razne putanje, a sta ce se desiti ako tacku projektujemo na jos vise osa?</p>
+            <p>Pogledajmo na animaciji ispod sta ce se desiti ako povecamo broj osa na koje projektujemo tacku. To mozemo uraditi preko slajdera:</p>
+            <iframe class="anm1" scrolling="no" title="Krug-2" src="https://www.geogebra.org/material/iframe/id/n9renrjr/width/1366/height/716/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="716px" style="border:0px;"> </iframe>
+            <p>Kako povecavamo broj osa oblik grupe tacaka sve preciznije formira se u krug!</p>
+            <p>Nakon svih ovih zanimljivosti mozemo da uocimo kako trigonometrijske funkcije mogu da budu nepredvidljive i da imaju svojstva koja ne mozemo odmah da uocimo.</p>
+            <p>Mozemo na kraju zakljuciti da se trigonometrijske funkcije mogu pojaviti cak i u umetnosti, a i gde sve ne!</p>
+            <p>Od njihovih cistih matematickih svojstava pa do gradjevine, fizike i umetnosti svuda se pojavljuju i uopste ne moraju biti apstraktne kako se na prvi pogled cine!</p>
+            <div class = "prethodna">
+                <a class="str" href = "Slajd-4.html">Prethodna strana</a>
+            </div>
+        </div>
+    </body>    
+</html> 

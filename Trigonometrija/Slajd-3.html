@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            text-align:left;
+        }
+        .Naslov{
+            height:100px;
+            width:92%;
+            position: absolute;
+            left:1cm;
+            right:1cm;
+            margin: 10px auto;
+            padding-top: 5px;
+            padding-left: 30px;
+            border-radius:5px;
+            background-color: rgb(0, 119, 255);
+        }
+        body{
+            background: fixed;
+            background-color:rgb(236, 235, 235);
+        }
+        a{
+            font-size: large;
+        }
+        .rez{
+            background:linear-gradient(90deg,black,rgb(151, 151, 151));
+            width:100%;
+            height:0.5cm;
+            top:4cm;
+            position:absolute;
+        }
+        .Meni{
+            width: 6cm;
+            position:absolute;
+            top:6cm;
+            left:1cm;
+            border: 5px;
+            border-style:ridge;         
+            border-color:black;   
+        }
+        .Meni a{
+            text-align: left;
+            background-color: rgb(63, 61, 61);
+            color: black;
+            display: block;
+            padding:10px;
+            padding-left: 30px;
+            border:rgb(0, 0, 0);
+        }
+        .Meni a:hover{
+            background-color: rgb(134, 134, 134);
+        }
+        .Meni a.active {
+            background-color: rgb(0, 81, 255);
+            color: black;
+        }
+        .sadrzaj{
+            width: 900px;
+            height: 2500px;
+            position:absolute;
+            top:6cm;
+            left:8cm;
+            background:linear-gradient(45deg,white,rgb(240, 239, 239));
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            font-family: Arial;
+            font-size: medium;
+            padding:1cm;
+        }
+        .anm1{
+            height:12.5cm;
+            width:19.5cm;
+            margin-left:1.5cm;
+            margin-right:1.5cm;
+        }
+        .sledeca{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            right:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .prethodna{
+            height:1.5cm;
+            width:3cm;
+            position:absolute;
+            bottom:0.5cm;
+            left:0.5cm;
+            background-color:rgb(0, 81, 255);
+            padding:10px;
+            text-align:center;
+            border:solid;
+            border-color: rgb(63, 61, 61) ;
+            border-radius: 10px;
+        }
+        .str{
+            color:rgb(148, 148, 148);
+        }
+    </style>
+    <header>
+        <meta charset="UTF-8">
+		<meta name="description">
+        <title>Trigonometrija</title>
+        <div class="Naslov">
+            <h1>Trigonometrija</h1>
+        </div>
+    </header>
+    <body>
+        <div class="Meni">
+            <a href = "index.html">Strana 1</a>
+            <a href = "Slajd-2.html">Strana 2</a>
+            <a href = "#" class = "active">Strana 3</a>
+            <a href = "Slajd-4.html">Strana 4</a>
+            <a href = "Slajd-5.html">Strana 5</a>
+
+        </div>
+        <div class="rez"></div>
+        <div class="sadrzaj">
+            <p>Krug sa stranicom duzine 1 naziva se <b>trigonometrijski krug</b>.</p>
+            <p>Njega smo videli na prethodnoj stranici kada smo izveli formulu za tetivu, a sada cemo preko njega prikazati sve trigonometrijske funkcije.</p>
+            <p>Neka imamo tacku B koja kruzi po jedinicnom krugu, ravnomernom brzinom.</p>
+            <p>Na sledecim animacijama vide se kosinus, odnosno sinus od ugla izmedju pozitivnog dela x ose i tacke B koja kruzi:</p>
+            <p><b>Kosinus:</b></p>
+            <iframe class="anm1" scrolling="no" title="Kosinus" src="https://www.geogebra.org/material/iframe/id/udvghv2u/width/1096/height/716/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1096px" height="716px" style="border:0px;"> </iframe>
+            <p><b>Sinus:</b></p>
+            <iframe class="anm1" scrolling="no" title="Sinus" src="https://www.geogebra.org/material/iframe/id/sh6r7myr/width/1080/height/700/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1080px" height="700px" style="border:0px;"> </iframe>
+            <p>Sada, definisacemo jos dve trigonometrijske funkcije: <b>tangens</b> i <b>kotangens</b></p>
+            <p>Tangens se definise kao odnos sinusa i kosinusa, a na trigonometrijskom krugu predstavljen je kao odsecak na osi x=1 izmedju x ose i preseka kraka ugla i ose x=1.</p>
+            <p>Ovo mozda zvuci komplikovano, zato cemo pogledati animaciju:</p>
+            <iframe class="anm1" scrolling="no" title="Tangens" src="https://www.geogebra.org/material/iframe/id/cqcsvbkh/width/1080/height/700/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1080px" height="700px" style="border:0px;"> </iframe>
+            <p>Slicno se definise i kotangens, on je odnos kosinusa i sinusa, a na trigonometrijskom krugu posmatramo odsecak na y osi:</p>
+            <iframe class="anm1" scrolling="no" title="Kotangens" src="https://www.geogebra.org/material/iframe/id/vdyrjpn6/width/1096/height/716/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1096px" height="716px" style="border:0px;"> </iframe>
+            <p>Na sledecoj strani mozemo videti jos neke grafike sinusne i kosinusne funkcije.</p>
+            <div class = "sledeca">
+                <a class="str" href = "Slajd-4.html">Sledeca strana</a>
+            </div>
+            <div class = "prethodna">
+                <a class="str" href = "Slajd-2.html">Prethodna strana</a>
+            </div>
+        </div>
+    </body>
+</html>
